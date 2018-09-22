@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		784C72AA1F1C93BB00E48397 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C72A91F1C93BB00E48397 /* ContactListViewController.swift */; };
+		784C72AC1F1C93EB00E48397 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C72AB1F1C93EB00E48397 /* Contact.swift */; };
 		7864342A1F13577500073A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786434291F13577500073A42 /* AppDelegate.swift */; };
-		7864342C1F13577500073A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7864342B1F13577500073A42 /* ViewController.swift */; };
 		7864342F1F13577500073A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7864342D1F13577500073A42 /* Main.storyboard */; };
 		786434311F13577500073A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786434301F13577500073A42 /* Assets.xcassets */; };
 		786434341F13577500073A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786434321F13577500073A42 /* LaunchScreen.storyboard */; };
 		7864343F1F13577500073A42 /* DragAndDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7864343E1F13577500073A42 /* DragAndDropTests.swift */; };
 		7864344A1F13577500073A42 /* DragAndDropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786434491F13577500073A42 /* DragAndDropUITests.swift */; };
+		78646B861F1366C60019A14E /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78646B851F1366C60019A14E /* ListCell.swift */; };
+		78646B881F1367410019A14E /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78646B871F1367410019A14E /* DraggableImageView.swift */; };
+		78646B8A1F14A2500019A14E /* DragViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78646B891F14A2500019A14E /* DragViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		784C72A91F1C93BB00E48397 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		784C72AB1F1C93EB00E48397 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		786434261F13577500073A42 /* DragAndDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAndDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786434291F13577500073A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7864342B1F13577500073A42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7864342E1F13577500073A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		786434301F13577500073A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786434331F13577500073A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		786434451F13577500073A42 /* DragAndDropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragAndDropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		786434491F13577500073A42 /* DragAndDropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropUITests.swift; sourceTree = "<group>"; };
 		7864344B1F13577500073A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78646B851F1366C60019A14E /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		78646B871F1367410019A14E /* DraggableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		78646B891F14A2500019A14E /* DragViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		784C72A71F1C91C200E48397 /* Drag Board */ = {
+			isa = PBXGroup;
+			children = (
+				78646B891F14A2500019A14E /* DragViewController.swift */,
+			);
+			path = "Drag Board";
+			sourceTree = "<group>";
+		};
+		784C72A81F1C928A00E48397 /* Contacts List */ = {
+			isa = PBXGroup;
+			children = (
+				78646B851F1366C60019A14E /* ListCell.swift */,
+				784C72AB1F1C93EB00E48397 /* Contact.swift */,
+				784C72A91F1C93BB00E48397 /* ContactListViewController.swift */,
+			);
+			path = "Contacts List";
+			sourceTree = "<group>";
+		};
 		7864341D1F13577500073A42 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				786434291F13577500073A42 /* AppDelegate.swift */,
-				7864342B1F13577500073A42 /* ViewController.swift */,
+				784C72A71F1C91C200E48397 /* Drag Board */,
+				784C72A81F1C928A00E48397 /* Contacts List */,
+				78646B871F1367410019A14E /* DraggableImageView.swift */,
 				7864342D1F13577500073A42 /* Main.storyboard */,
 				786434301F13577500073A42 /* Assets.xcassets */,
 				786434321F13577500073A42 /* LaunchScreen.storyboard */,
@@ -193,6 +221,7 @@
 				TargetAttributes = {
 					786434251F13577500073A42 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
 					};
 					786434391F13577500073A42 = {
 						CreatedOnToolsVersion = 9.0;
@@ -256,7 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7864342C1F13577500073A42 /* ViewController.swift in Sources */,
+				784C72AC1F1C93EB00E48397 /* Contact.swift in Sources */,
+				78646B8A1F14A2500019A14E /* DragViewController.swift in Sources */,
+				784C72AA1F1C93BB00E48397 /* ContactListViewController.swift in Sources */,
+				78646B861F1366C60019A14E /* ListCell.swift in Sources */,
+				78646B881F1367410019A14E /* DraggableImageView.swift in Sources */,
 				7864342A1F13577500073A42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,11 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RS6N8DMLWW;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DragAndDrop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xebia.DragAndDrop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.DragAndDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -433,11 +468,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RS6N8DMLWW;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DragAndDrop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xebia.DragAndDrop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.DragAndDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -524,6 +561,7 @@
 				786434501F13577500073A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		786434511F13577500073A42 /* Build configuration list for PBXNativeTarget "DragAndDropTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +570,7 @@
 				786434531F13577500073A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		786434541F13577500073A42 /* Build configuration list for PBXNativeTarget "DragAndDropUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +579,7 @@
 				786434561F13577500073A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
